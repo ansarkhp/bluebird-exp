@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+
+}
+
+
+.blank-component-wrap {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    margin: auto;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #808080;
+  }
+}
+
+//////
+.company-details-wrap {
+  padding: 20px 100px;
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  gap: 70px;
+
+  .company-list-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+    width: 100%;
+
+    .company-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0px;
+      align-items: flex-start;
+      opacity: 0.5;
+      transform: scale(0.95);
+      transition: all 0.5s ease; // Smooth transition for scaling and opacity
+
+      .logo {
+        height: 40px;
+        filter: brightness(0) saturate(100%) invert(68%) sepia(0%) saturate(0%) hue-rotate(47deg) brightness(96%) contrast(89%);
+      }
+
+      .head {
+        display: none;
+      }
+
+      .des {
+        display: none;
+      }
+
+      .more-btn {
+        display: none;
+      }
+
+      &.active {
+        opacity: 1;
+        transform: scale(1); // Scale up and make fully visible when active
+
+        .logo {
+          height: 60px;
+          filter: none;
+        }
+
+        .head {
+          display: unset;
+          font-size: 40px;
+          font-weight: 600;
+          line-height: 49.67px;
+          color: #15163C;
+        }
+
+        .des {
+          display: unset;
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 29.05px;
+        }
+
+        .more-btn {
+          display: flex;
+          align-items: center;
+          padding: 10px 20px 10px 24px;
+          gap: 10px;
+          border-radius: 41px;
+          border: 1px solid #0000001F;
+          opacity: 0px;
+          background-color: #37B5E8;
+          color: #fff;
+          text-transform: uppercase;
+          cursor: pointer;
+        }
+      }
+
+
+    }
+  }
+
+  .right-section-wrap {
+    width: 100%;
+
+    .img-box {
+      border-radius: 32px;
+      overflow: hidden;
+      width: 400px;
+      max-width: 100%;
+      aspect-ratio: 1;
+
+      .cover-img {
+
+        max-width: 100%;
+        aspect-ratio: 1;
+        object-fit: cover;
+
+      }
+    }
+  }
+}
+
+
+

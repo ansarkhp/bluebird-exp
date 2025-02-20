@@ -11,10 +11,15 @@
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
+    "@react-spring/three": "^9.7.5",
+    "@react-three/drei": "^10.0.0",
+    "@react-three/fiber": "^9.0.2",
     "next": "15.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-globe.gl": "^2.32.0",
     "sass": "^1.83.4",
-    "smooth-scrollbar": "^8.8.4"
+    "smooth-scrollbar": "^8.8.4",
+    "topojson-client": "^3.1.0"
   }
 }
